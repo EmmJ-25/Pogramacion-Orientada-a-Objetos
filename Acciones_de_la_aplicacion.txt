@@ -1,0 +1,32 @@
+gsp> ayuda
+   Muestra en pantalla todos los comandos y argumentos para manejar la aplicacion
+
+> crear-usuario:<nombre_del_usuario>;<edad>;<movil>;<clave>
+    Registrar el usuario en la aplicacion introuciendo los datos indicados en cada uno de los argumentos
+
+> login:<nombre_del_usuario>;<clave>
+    Iniciar sesion en la aplicacion con la cable correspondiente al nombre del usuario. 
+
+> logout 
+    Salir de la sesion
+
+> crear-actividad:<tipo [Generica | Teatro | Cine]>;<nombre_actividad>;<descripcion>;<duracion>;<coste>;<aforo>
+    crear una actividad definiendo el tipo, nombre, en qué consiste y la duracion, el coste y el aforo
+
+> crear-plan:<nombre_plan>;<fecha DD/MM/AAAA-hh mm>;<Lugar>;<aforo>
+    crear plan definir el nombre, la fecha y hora, lugar y el aforo
+
+> agregar-act-plan:<id_plan>;<id_actividad>
+    agregar una actividad creada a un plan mediante el id de ambos
+
+> unirse-plan:<id_plan>
+    el usuario logeado se une a un plan
+
+> listar-planes:<fecha | subscrito>
+    listar los planes por fecha o bien a los que esta subscrito el usuario
+ 
+> obtener-coste:<id_plan> 
+    obtener coste en funcion de la edad del usuario
+
+> eliminar-plan:<id_plan>
+    eliminar un plan creado. No se eliminan la existencia de las actividades que formaban parte de este
